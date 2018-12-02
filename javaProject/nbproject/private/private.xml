@@ -3,11 +3,27 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/F:/NetBeansProjects/CarPool/web/index.html</file>
-            <file>file:/F:/NetBeansProjects/CarPool/web/register-process.jsp</file>
-            <file>file:/F:/NetBeansProjects/CarPool/web/register.html</file>
-            <file>file:/F:/NetBeansProjects/CarPool/web/login.html</file>
-            <file>file:/F:/NetBeansProjects/CarPool/web/login.jsp</file>
+            <file>file:/F:/NetBeansProjects/javaProject/web/find.jsp</file>
+            <file>file:/F:/NetBeansProjects/javaProject/web/welcome.jsp</file>
+            <file>file:/F:/NetBeansProjects/javaProject/src/java/com/bean/RegisterBean.java</file>
+            <file>file:/F:/NetBeansProjects/javaProject/src/java/com/servlet/OfferServlet.java</file>
+            <file>file:/F:/NetBeansProjects/javaProject/web/WEB-INF/web.xml</file>
+            <file>file:/F:/NetBeansProjects/javaProject/web/login.jsp</file>
+            <file>file:/F:/NetBeansProjects/javaProject/web/index.html</file>
+            <file>file:/F:/NetBeansProjects/javaProject/src/java/com/servlet/RegisterServlet.java</file>
+            <file>file:/F:/NetBeansProjects/javaProject/src/java/com/dao/LoginDao.java</file>
+            <file>file:/F:/NetBeansProjects/javaProject/web/css/style.css</file>
+            <file>file:/F:/NetBeansProjects/javaProject/src/java/com/bean/LoginBean.java</file>
+            <file>file:/F:/NetBeansProjects/javaProject/web/css/loginstyle.css</file>
+            <file>file:/F:/NetBeansProjects/javaProject/web/css/registerstyle.css</file>
+            <file>file:/F:/NetBeansProjects/javaProject/src/java/com/connection/DBConnection.java</file>
+            <file>file:/F:/NetBeansProjects/javaProject/web/Home.jsp</file>
+            <file>file:/F:/NetBeansProjects/javaProject/src/java/com/servlet/LoginServlet.java</file>
+            <file>file:/F:/NetBeansProjects/javaProject/web/ride.jsp</file>
+            <file>file:/F:/NetBeansProjects/javaProject/web/offer.jsp</file>
+            <file>file:/F:/NetBeansProjects/javaProject/web/register.jsp</file>
+            <file>file:/F:/NetBeansProjects/javaProject/src/java/com/servlet/LogoutServlet.java</file>
+            <file>file:/F:/NetBeansProjects/javaProject/src/java/com/dao/RegisterDao.java</file>
         </group>
     </open-files>
 </project-private>

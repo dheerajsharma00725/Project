@@ -1,54 +1,50 @@
-<%-- 
-    Document   : login
-    Created on : 13 Nov, 2018, 10:41:40 AM
-    Author     : Dheeraj Sharma
---%>
-
-<%@page import="java.sql.*"%>
-<%@page import="java.util.*"%>
-<!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>LOGIN</title>
-    </head>
-    <body>
-        <%
-     String username = request.getParameter("username");
-            String password = request.getParameter("password");
-            
-            
-            try
-            {
-                String myUrl = "jdbc:mysql://localhost:3306/acadview";
-                Class.forName("com.mysql.cj.jdbc.Driver");
-                Connection conn = DriverManager.getConnection(myUrl,"root","");
-            //out.println("Hello 1");
-
-                String query = "Select username,password from users where username='"+username+"' and password ='"+password+"'";
-                Statement st = conn.createStatement();
-                ResultSet rs = st.executeQuery(query);
-                
-               if(rs.next())
-                {
-                    out.println("Logged in successfully");
-                   out.print("Hello "+username);}
-               else
-                   out.println("Username or Password does not exists");
-                st.close();
-               
-            }
-            
-            catch(ClassNotFoundException e)
-            {
-                out.print(e);
-            }
-            catch(SQLException e)
-            {
-                out.print(e);
-            }
-            
-           %>
-           
-    </body>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Login</title>
+<script> 
+function validate()
+{ 
+ var username = document.form.username.value; 
+ var password = document.form.password.value;
+ 
+ if (username==null || username=="")
+ { 
+ alert("Username cannot be blank"); 
+ return false; 
+ }
+ else if(password==null || password=="")
+ { 
+ alert("Password cannot be blank"); 
+ return false; 
+ } 
+}
+</script> 
+</head>
+<body>
+<div style="text-align:center"><h1>Login</h1> </div>
+<br>
+<form name="form" action="LoginServlet"  method="post" onsubmit="return validate()">
+<table align="center">
+ <tr>
+ <td>Username</td>
+ <td><input type="text" name="username" /></td>
+ </tr>
+ <tr>
+ <td>Password</td>
+ <td><input type="password" name="password" /></td>
+ </tr>
+ <tr> <!-- refer to the video to understand request.getAttribute() -->
+ <td><span style="color:red"><%=(request.getAttribute("errMessage") == null) ? ""
+ : request.getAttribute("errMessage")%></span></td>
+ </tr>
+ <tr>
+ <td></td>
+ <td><input type="submit" value="Login"></input><input
+ type="reset" value="Reset"></input></td>
+ </tr>
+</table>
+</form>
+ 
+</body>
 </html>
